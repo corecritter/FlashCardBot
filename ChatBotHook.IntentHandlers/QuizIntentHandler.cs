@@ -108,7 +108,8 @@ namespace ChatBotHook.IntentHandlers
                     slots.QuizProgression = null;
                     slotToElicit = slots.GetSlotToElicit();
                     var quizCardStatus = currentCard.GetCardStatus();
-                    responseMessage = String.Format("Here is the {0} of the card.", quizCardStatus.ToString().ToLower());
+                    //responseMessage = String.Format("Here is the {0} of the card.", quizCardStatus.ToString().ToLower());
+                    responseMessage = currentCard.GetCardDataBasedOnStatus();
                     responseCard = BuildProgressionResponseCard(2, currentCard.GetCardDataBasedOnStatus());
                     Dal.UpdateDeck(deck);
                 }
@@ -147,7 +148,8 @@ namespace ChatBotHook.IntentHandlers
             {
                 new GenericAttatchment()
                 {
-                    title = cardData,
+                    //title = cardData,
+                    title = "__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __",
                     buttons = new List<Button>()
                     {
                         new Button()

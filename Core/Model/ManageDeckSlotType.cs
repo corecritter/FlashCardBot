@@ -30,7 +30,7 @@ namespace Core.Model
             {
                 if (String.IsNullOrEmpty(Front) || String.IsNullOrWhiteSpace(Front))
                     return nameof(Front);
-                if (String.IsNullOrEmpty(Back) || String.IsNullOrWhiteSpace(Back))
+                if ((String.IsNullOrEmpty(Back) || String.IsNullOrWhiteSpace(Back)) && (String.IsNullOrEmpty(Confirm) || String.IsNullOrWhiteSpace(Confirm)))
                     return nameof(Back);
                 if (String.IsNullOrEmpty(Confirm) || String.IsNullOrWhiteSpace(Confirm))
                     return nameof(Confirm);
