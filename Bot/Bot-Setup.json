@@ -1,0 +1,87 @@
+{"name":"FlashCardBot","description":null,"intents":[{"intentName":"Quiz","intentVersion":"7"},{"intentName":"ManageDecks","intentVersion":"17"}],"clar
+ificationPrompt":{"messages":[{"contentType":"PlainText","content":"Sorry, can you please repeat that?"}],"maxAttempts":5,"responseCard":null},"abortSt
+atement":{"messages":[{"contentType":"PlainText","content":"Sorry, I could not understand. Goodbye."}],"responseCard":null},"status":"READY","failureRe
+ason":null,"lastUpdatedDate":"2017-07-18T01:34:35.090Z","createdDate":"2017-07-18T01:34:11.811Z","idleSessionTTLInSeconds":300,"voiceId":"0","checksum"
+:"ac30ebdf-3c4e-4c69-8b86-560a7fa16327","version":"8","locale":"en-US","childDirected":false,"dependencies":{"intents":[{"name":"ManageDecks","descript
+ion":null,"slots":[{"name":"ManageType","description":null,"slotConstraint":"Optional","slotType":"ManageType","slotTypeVersion":"1","valueElicitationP
+rompt":{"messages":[{"contentType":"PlainText","content":"Would you like to add a new, modify an existing, or delete an old flash card deck?"}],"maxAtt
+empts":2,"responseCard":null},"priority":1,"sampleUtterances":[],"responseCard":null},{"name":"Front","description":null,"slotConstraint":"Optional","s
+lotType":"CardInfo","slotTypeVersion":"5","valueElicitationPrompt":{"messages":[{"contentType":"PlainText","content":"Enter front"}],"maxAttempts":2,"r
+esponseCard":null},"priority":3,"sampleUtterances":[],"responseCard":null},{"name":"Back","description":null,"slotConstraint":"Optional","slotType":"Ca
+rdInfo","slotTypeVersion":"5","valueElicitationPrompt":{"messages":[{"contentType":"PlainText","content":"Enter back"}],"maxAttempts":2,"responseCard":
+null},"priority":4,"sampleUtterances":[],"responseCard":null},{"name":"DeckName","description":null,"slotConstraint":"Optional","slotType":"CardInfo","
+slotTypeVersion":"5","valueElicitationPrompt":{"messages":[{"contentType":"PlainText","content":"What is the name of the deck you'd like to manage?"}],
+"maxAttempts":2,"responseCard":null},"priority":2,"sampleUtterances":[],"responseCard":null},{"name":"Confirm","description":null,"slotConstraint":"Opt
+ional","slotType":"Confirm","slotTypeVersion":"1","valueElicitationPrompt":{"messages":[{"contentType":"PlainText","content":"Are you sure?"}],"maxAtte
+mpts":2,"responseCard":null},"priority":5,"sampleUtterances":[],"responseCard":null}],"sampleUtterances":["I want to {ManageType} a flash card deck","I
+ want to {ManageType} a deck","I would like to {ManageType} flash cards","Hi can I {ManageType} some flash cards"],"dialogCodeHook":{"uri":"arn:aws:lam
+bda:us-east-1:190218143421:function:WelcomeFunctionHook","messageVersion":"1.0"},"fulfillmentActivity":{"type":"CodeHook","codeHook":{"uri":"arn:aws:la
+mbda:us-east-1:190218143421:function:WelcomeFunctionHook","messageVersion":"1.0"}},"parentIntentSignature":null,"lastUpdatedDate":"2017-07-18T01:33:33.
+377Z","createdDate":"2017-07-18T01:33:33.377Z","version":"17","checksum":"17dc27e1-3316-421b-b7e0-62ce542eccb5"},{"name":"Quiz","description":null,"slo
+ts":[{"name":"QuizOrder","description":null,"slotConstraint":"Optional","slotType":"QuizOrder","slotTypeVersion":"1","valueElicitationPrompt":{"message
+s":[{"contentType":"PlainText","content":"Would you like to view the flashcards in a sequential order or at random?"}],"maxAttempts":2,"responseCard":n
+ull},"priority":2,"sampleUtterances":[],"responseCard":null},{"name":"DeckName","description":null,"slotConstraint":"Required","slotType":"CardInfo","s
+lotTypeVersion":"5","valueElicitationPrompt":{"messages":[{"contentType":"PlainText","content":"What deck would you like to be quizzed on?"}],"maxAttem
+pts":2,"responseCard":null},"priority":1,"sampleUtterances":[],"responseCard":null},{"name":"QuizProgression","description":null,"slotConstraint":"Opti
+onal","slotType":"QuizProgression","slotTypeVersion":"2","valueElicitationPrompt":{"messages":[{"contentType":"PlainText","content":"e.g. What city?"}]
+,"maxAttempts":2,"responseCard":"{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[{\"buttons\":[{\"tex
+t\":\"Next\",\"value\":\"next\"},{\"text\":\"Previous\",\"value\":\"previous\"},{\"text\":\"Skip\",\"value\":\"skip\"},{\"text\":\"Stop\",\"value\":\"s
+top\"},{\"text\":\"Delete Card\",\"value\":\"deleteCard\"}]}]}"},"priority":3,"sampleUtterances":[],"responseCard":null}],"sampleUtterances":["I want t
+o be quizzed on a deck"],"dialogCodeHook":{"uri":"arn:aws:lambda:us-east-1:190218143421:function:WelcomeFunctionHook","messageVersion":"1.0"},"fulfillm
+entActivity":{"type":"CodeHook","codeHook":{"uri":"arn:aws:lambda:us-east-1:190218143421:function:WelcomeFunctionHook","messageVersion":"1.0"}},"parent
+IntentSignature":null,"lastUpdatedDate":"2017-07-18T01:33:33.291Z","createdDate":"2017-07-18T01:33:33.291Z","version":"7","checksum":"1263fbf6-ef08-433
+1-8d6e-fe1369507c53"}],"slotTypes":[{"name":"CardInfo","description":null,"enumerationValues":[{"value":"There isn't much to do when a column gets in y
+our way"},{"value":"Deck2"},{"value":"neurological disorder that is marked by the recurrent, sudden, uncontrollable compulsion to sleep"},{"value":"Sci
+ence 101"},{"value":"that Coney Island'sCannon Coasterwas designed to shoot its riders out of a giant cannon over a gap in the tracks"},{"value":"Colum
+bia Riveris the largest river in thePacific Northwestregion of North America"},{"value":"UserInput"},{"value":"Willing to substantiate in the most unde
+rstanding of manners"},{"value":"I've found peace here but you can't seem to find it anywhere else."},{"value":"In software engineering, an abstract ty
+pe is a type in a nominative type system which is declared by the programmer."},{"value":"An unusually severe form of premenstrual syndrome characteriz
+ed by drastic mood swings, anger, depression, irritability, tension"},{"value":"deck_2310"},{"value":"Something really really long that a user might wa
+nt to have as some card data."},{"value":"followingpseudocodefor three-way partitioning assumes zero-based array indexing"},{"value":"acute highly cont
+agious viral disease with fever, runny nose, cough, red eyes, and a spreading skin rash"},{"value":"Boolean AND is one of the operations in the Boolean
+ algebra that is performed on a pair of one-digit binary numbers."},{"value":"Former Brazilian presidentLuiz Incio Lula da Silva(pictured) is sentenced
+ to nearly ten years in prison over"},{"value":"Definition: You can always find it here"},{"value":"a complete and self-contained program that helps th
+e user accomplish a specific task"}],"lastUpdatedDate":"2017-07-18T01:33:08.882Z","createdDate":"2017-07-18T01:33:08.882Z","version":"5","checksum":nul
+l},{"name":"Confirm","description":null,"enumerationValues":[{"value":"no"},{"value":"yes"}],"lastUpdatedDate":"2017-07-11T22:59:06.889Z","createdDate"
+:"2017-07-11T22:59:06.889Z","version":"1","checksum":null},{"name":"CardInfo","description":null,"enumerationValues":[{"value":"There isn't much to do
+when a column gets in your way"},{"value":"Deck2"},{"value":"neurological disorder that is marked by the recurrent, sudden, uncontrollable compulsion t
+o sleep"},{"value":"Science 101"},{"value":"that Coney Island'sCannon Coasterwas designed to shoot its riders out of a giant cannon over a gap in the t
+racks"},{"value":"Columbia Riveris the largest river in thePacific Northwestregion of North America"},{"value":"UserInput"},{"value":"Willing to substa
+ntiate in the most understanding of manners"},{"value":"I've found peace here but you can't seem to find it anywhere else."},{"value":"In software engi
+neering, an abstract type is a type in a nominative type system which is declared by the programmer."},{"value":"An unusually severe form of premenstru
+al syndrome characterized by drastic mood swings, anger, depression, irritability, tension"},{"value":"deck_2310"},{"value":"Something really really lo
+ng that a user might want to have as some card data."},{"value":"followingpseudocodefor three-way partitioning assumes zero-based array indexing"},{"va
+lue":"acute highly contagious viral disease with fever, runny nose, cough, red eyes, and a spreading skin rash"},{"value":"Boolean AND is one of the op
+erations in the Boolean algebra that is performed on a pair of one-digit binary numbers."},{"value":"Former Brazilian presidentLuiz Incio Lula da Silva
+(pictured) is sentenced to nearly ten years in prison over"},{"value":"Definition: You can always find it here"},{"value":"a complete and self-containe
+d program that helps the user accomplish a specific task"}],"lastUpdatedDate":"2017-07-18T01:33:08.882Z","createdDate":"2017-07-18T01:33:08.882Z","vers
+ion":"5","checksum":null},{"name":"CardInfo","description":null,"enumerationValues":[{"value":"There isn't much to do when a column gets in your way"},
+{"value":"Deck2"},{"value":"neurological disorder that is marked by the recurrent, sudden, uncontrollable compulsion to sleep"},{"value":"Science 101"}
+,{"value":"that Coney Island'sCannon Coasterwas designed to shoot its riders out of a giant cannon over a gap in the tracks"},{"value":"Columbia Riveri
+s the largest river in thePacific Northwestregion of North America"},{"value":"UserInput"},{"value":"Willing to substantiate in the most understanding
+of manners"},{"value":"I've found peace here but you can't seem to find it anywhere else."},{"value":"In software engineering, an abstract type is a ty
+pe in a nominative type system which is declared by the programmer."},{"value":"An unusually severe form of premenstrual syndrome characterized by dras
+tic mood swings, anger, depression, irritability, tension"},{"value":"deck_2310"},{"value":"Something really really long that a user might want to have
+ as some card data."},{"value":"followingpseudocodefor three-way partitioning assumes zero-based array indexing"},{"value":"acute highly contagious vir
+al disease with fever, runny nose, cough, red eyes, and a spreading skin rash"},{"value":"Boolean AND is one of the operations in the Boolean algebra t
+hat is performed on a pair of one-digit binary numbers."},{"value":"Former Brazilian presidentLuiz Incio Lula da Silva(pictured) is sentenced to nearly
+ ten years in prison over"},{"value":"Definition: You can always find it here"},{"value":"a complete and self-contained program that helps the user acc
+omplish a specific task"}],"lastUpdatedDate":"2017-07-18T01:33:08.882Z","createdDate":"2017-07-18T01:33:08.882Z","version":"5","checksum":null},{"name"
+:"ManageType","description":"What user wants to do with deck management","enumerationValues":[{"value":"Add"},{"value":"Delete"},{"value":"Modify"}],"l
+astUpdatedDate":"2017-07-07T00:06:22.745Z","createdDate":"2017-07-07T00:06:22.745Z","version":"1","checksum":null},{"name":"QuizProgression","descripti
+on":"Does the user want to go to the back of the card, skip the card, stop the quiz, or go to the last previous position.","enumerationValues":[{"value
+":"next"},{"value":"stop"},{"value":"previous"},{"value":"skip"},{"value":"deleteCard"}],"lastUpdatedDate":"2017-07-16T03:21:33.293Z","createdDate":"20
+17-07-16T03:21:33.293Z","version":"2","checksum":null},{"name":"CardInfo","description":null,"enumerationValues":[{"value":"There isn't much to do when
+ a column gets in your way"},{"value":"Deck2"},{"value":"neurological disorder that is marked by the recurrent, sudden, uncontrollable compulsion to sl
+eep"},{"value":"Science 101"},{"value":"that Coney Island'sCannon Coasterwas designed to shoot its riders out of a giant cannon over a gap in the track
+s"},{"value":"Columbia Riveris the largest river in thePacific Northwestregion of North America"},{"value":"UserInput"},{"value":"Willing to substantia
+te in the most understanding of manners"},{"value":"I've found peace here but you can't seem to find it anywhere else."},{"value":"In software engineer
+ing, an abstract type is a type in a nominative type system which is declared by the programmer."},{"value":"An unusually severe form of premenstrual s
+yndrome characterized by drastic mood swings, anger, depression, irritability, tension"},{"value":"deck_2310"},{"value":"Something really really long t
+hat a user might want to have as some card data."},{"value":"followingpseudocodefor three-way partitioning assumes zero-based array indexing"},{"value"
+:"acute highly contagious viral disease with fever, runny nose, cough, red eyes, and a spreading skin rash"},{"value":"Boolean AND is one of the operat
+ions in the Boolean algebra that is performed on a pair of one-digit binary numbers."},{"value":"Former Brazilian presidentLuiz Incio Lula da Silva(pic
+tured) is sentenced to nearly ten years in prison over"},{"value":"Definition: You can always find it here"},{"value":"a complete and self-contained pr
+ogram that helps the user accomplish a specific task"}],"lastUpdatedDate":"2017-07-18T01:33:08.882Z","createdDate":"2017-07-18T01:33:08.882Z","version"
+:"5","checksum":null},{"name":"QuizOrder","description":"Start the quiz in a sequential or random fashion.","enumerationValues":[{"value":"random"},{"v
+alue":"sequential"}],"lastUpdatedDate":"2017-07-12T23:00:54.252Z","createdDate":"2017-07-12T23:00:54.252Z","version":"1","checksum":null}]}}
